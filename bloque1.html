@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- Set the viewport width to device width for mobile -->
+        <meta name="viewport" content="width=device-width" />
+
+        <title>Encuestas</title>
+
+        <!-- Included CSS Files (Uncompressed) -->
+        <!--
+        <link rel="stylesheet" href="stylesheets/foundation.css">
+        -->
+
+        <!-- Included CSS Files (Compressed) -->
+        <link rel="stylesheet" href="assets/foundation/stylesheets/foundation.min.css">
+        <link rel="stylesheet" href="assets/foundation/stylesheets/app.css">
+
+        <script src="assets/foundation/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div class="row">
+            <form>
+                <fieldset>
+                    
+                    <h3>Bloque 1</h3>
+                    
+                    <h4>1.1 <small>Cuando se toman decisiones que me afectan, piensan primero en mi bienestar en:</small></h4>
+                    <div id="p1" class="row">
+                        <label class="three columns">Mi familia</label>
+                        <label class="three columns"><input name="p1-o1" type="radio" value="familia-si"> Sí</label>
+                        <label class="three columns"><input name="p1-o1" type="radio" value="familia-no"> No</label>
+                        <label class="three columns"><input name="p1-o1" type="radio" value="familia-no-contesto"> No Contesto</label>
+                        
+                        <label class="three columns">Mi Escuela</label>
+                        <label class="three columns"><input name="p1-o2" type="radio" value="escuela-si"> Sí</label>
+                        <label class="three columns"><input name="p1-o2" type="radio" value="escuela-no"> No</label>
+                        <label class="three columns"><input name="p1-o2" type="radio" value="escuela-no-contesto"> No Contesto</label>
+                        
+                        <label class="three columns">Mi Comunidad</label>
+                        <label class="three columns"><input name="p1-o3" type="radio" value="comunidad-si"> Sí</label>
+                        <label class="three columns"><input name="p1-o3" type="radio" value="comunidad-no"> No</label>
+                        <label class="three columns"><input name="p1-o3" type="radio" value="comunidad-no-contesto"> No Contesto</label>
+                    </div>
+
+                    <h4>1.2 <small>Conozco leyes que garantizan mis derechos como niña, niño o adolescente:</small></h4>
+                    <div id="p2" class="row">
+                        <label class="four columns"><input name="p2-o1" type="radio" value="si"> Sí</label>
+                        <label class="four columns"><input name="p2-o1" type="radio" value="no"> No</label>
+                        <label class="four columns"><input name="p2-o1" type="radio" value="no-contesto"> No Contesto</label>
+                        <br/>
+                        <br/>
+                        <div class="twelve columns"><label>¿Cuáles?</label></div>
+                        <div class="ten columns end"><textarea id="p2-c"></textarea></div>
+                    </div>
+
+                    <h4>1.3 <small>Sé que el gobierno está obligado a garantizar mi seguridad, educación, salud y desarrollo:</small></h4>
+                    <div id="p3" class="row">
+                        <label class="four columns"><input name="p3-o1" type="radio" value="si"> Sí</label>
+                        <label class="four columns"><input name="p3-o1" type="radio" value="no"> No</label>
+                        <label class="four columns"><input name="p3-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+                    <h4>1.4 <small>En mi comunidad se han realizado actividades que hace el gobierno para cuidar mi seguridad, educación, salud y desarrollo:</small></h4>
+                    <div id="p4" class="row">
+                        <label class="four columns"><input name="p4-o1" type="radio" value="si"> Sí</label>
+                        <label class="four columns"><input name="p4-o1" type="radio" value="no"> No</label>
+                        <label class="four columns"><input name="p4-o1" type="radio" value="no-contesto"> No Contesto</label>
+                        <br/>
+                        <br/>
+                        <div class="twelve columns"><label>¿Cuáles?</label></div>
+                        <div class="ten columns end"><textarea id="p4-c"></textarea></div>
+                    </div>
+                    <br/>
+                    <a href="bloque2.html" class="four columns end round button" id="continuar">Continuar con el Segundo Bloque</a>
+                    <a href="preview.html" class="four columns end round button" id="preview">Vista Previa</a>
+                    <br/>
+                    <div class="eight end columns error">
+                        <small id="mensaje"></small>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Included JS Files (Compressed) -->
+        <script src="assets/foundation/javascripts/jquery.js"></script>
+        <script src="assets/foundation/javascripts/foundation.min.js"></script>
+
+        <!-- Initialize JS Plugins -->
+        <script src="assets/foundation/javascripts/app.js"></script>
+        <script src="assets/foundation/javascripts/jquery.foundation.buttons.js"></script>
+
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/load_bloque1.js"></script>
+    </body>
+</html>

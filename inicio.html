@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- Set the viewport width to device width for mobile -->
+        <meta name="viewport" content="width=device-width" />
+
+        <title>Inicio</title>
+
+        <!-- Included CSS Files (Uncompressed) -->
+        <!--
+        <link rel="stylesheet" href="stylesheets/foundation.css">
+        -->
+
+        <!-- Included CSS Files (Compressed) -->
+        <link rel="stylesheet" href="assets/foundation/stylesheets/foundation.min.css">
+        <link rel="stylesheet" href="assets/foundation/stylesheets/app.css">
+
+        <script src="assets/foundation/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div class="row">
+            <form>
+                <fieldset>
+                    <div class="row">
+                        <div class="four columns"><h3>Estado: Oaxaca</h3></div>
+                        <label class="four columns" for="folio"><b>Folio</b><input id="folio" type="text"></label>
+                        <label class="four columns" for="organizacion">Organización o Escuela<input id="organizacion" type="text"></label>
+                    </div>
+                    <div class="row">
+                        <label class="four columns" for="comunidad">Comunidad<input id="comunidad" type="text"></label>
+                        <label class="four columns" for="municipio">Municipio<input id="municipio" type="text"></label>
+                        <label class="four columns" for="pueblo">Pueblo Indígena<input id="pueblo" type="text"></label>
+                    </div>
+                    <div class="row">
+                        <div class="four columns">
+                            <fieldset>
+                                <legend>Lenguaje</legend>
+                                <label class="twelve columns" for="lengua">Lengua<input id="lengua" type="text"></label>
+                                <label class="twelve columns" for="lengua-habla"><input name="lengua-habilidades" id="lengua-habla" value="habla" type="checkbox"> Habla</label>
+                                <label class="twelve columns" for="lengua-entiende"><input name="lengua-habilidades" id="lengua-entiende" value="entiende" type="checkbox"> Entiende</label>
+                                <label class="twelve columns" for="lengua-lee"><input name="lengua-habilidades" id="lengua-lee" value="lee" type="checkbox"> Lee</label>
+                                <label class="twelve columns" for="lengua-escribe"><input name="lengua-habilidades" id="lengua-escribe" value="escribe" type="checkbox"> Escribe</label>
+                            </fieldset>
+                        </div>
+                        <div class="eight columns">
+                            <fieldset>
+                                <legend>Escolaridad</legend>
+                                <div class="six columns">
+                                    <label for="escolaridad">Escolaridad
+                                        <select id="escolaridad">
+                                            <option SELECTED>Ninguna</option>
+                                            <option>Primaria</option>
+                                            <option>Secundaria</option>
+                                            <option>Bachillerato</option>
+                                        </select>
+                                    </label>
+                                </div>
+                                <label class="six columns" for="grado-escolar">
+                                    Grado escolar <input type="text" id="grado-escolar">
+                                </label>
+                                <div class="twelve columns">
+                                    <label class="three columns">Tipo de escuela</label>
+                                    <div class="three columns">
+                                        <label for="publica"><input name="publica-privada" id="publica" type="radio" value="publica"> Pública</label>
+                                        <label for="privada"><input name="publica-privada" id="privada" type="radio" value="privada"> Privada</label>
+                                    </div>
+                                    <div class="three columns">
+                                        <label for="rural"><input name="rural-urbana" id="rural" type="radio" value="rural"> Rural</label>
+                                        <label for="urbana"><input name="rural-urbana" id="urbana" type="radio" value="urbana"> Urbana</label>
+                                    </div>
+                                    <div class="three columns">
+                                        <label for="matutino"><input name="turno" id="matutino" type="radio" value="matutino"> Matutino</label>
+                                        <label for="vespertino"><input name="turno" id="vespertino" type="radio" value="vespertino"> Vespertino</label>
+                                        <label for="mixto"><input name="turno" id="mixto" type="radio" value="mixto"> Mixto</label>
+                                    </div>
+                                </div>
+                            </fieldset>
+                        </div>
+                    </div>
+                    <br/>
+                    <div class="row">
+                        <div class="four columns">
+                            <label class="four columns right">Sexo</label>
+                            <label class="four columns offset-by-four" for="hombre"><input name="sexo" type="radio" id="hombre" value="hombre"> Hombre</label>
+                            <label class="four columns" for="mujer"><input name="sexo" type="radio" id="mujer" value="mujer"> Mujer</label>
+                        </div>
+                        <label class="four columns end" for="edad">Edad<input id="edad" type="text"></label>
+
+                    </div>
+                    <br/>
+                    <a href="bloque1.html" class="four columns round button" id="continuar">Continuar con el Primer Bloque</a>
+                    <a href="preview.html" class="four columns round button" id="preview">Ver Vista Previa</a>
+                    <br/>
+                    <br/>
+                    <div class="eight end columns error">
+                        <small id="mensaje"></small>
+                    </div>
+                    <br/>
+                    <br/>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Included JS Files (Compressed) -->
+        <script src="assets/foundation/javascripts/jquery.js"></script>
+        <script src="assets/foundation/javascripts/foundation.min.js"></script>
+
+        <!-- Initialize JS Plugins -->
+        <script src="assets/foundation/javascripts/app.js"></script>
+        <script src="assets/foundation/javascripts/jquery.foundation.buttons.js"></script>
+
+        <script type="text/javascript" src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/load_inicio.js"></script>
+    </body>
+</html>

@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- Set the viewport width to device width for mobile -->
+        <meta name="viewport" content="width=device-width" />
+
+        <title>Encuestas</title>
+
+        <!-- Included CSS Files (Uncompressed) -->
+        <!--
+        <link rel="stylesheet" href="stylesheets/foundation.css">
+        -->
+
+        <!-- Included CSS Files (Compressed) -->
+        <link rel="stylesheet" href="assets/foundation/stylesheets/foundation.min.css">
+        <link rel="stylesheet" href="assets/foundation/stylesheets/app.css">
+
+        <script src="assets/foundation/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div class="row">
+            <form>
+                <fieldset>
+
+                    <h3>Bloque 2</h3>
+
+                    <h4>2.1 <small>Escuchan y toman en cuenta mi opinión en:</small></h4>
+                    <div id="p1" class="row">
+                        <label class="three columns">Mi familia</label>
+                        <label class="three columns"><input name="p1-o1" type="radio" value="familia-si"> Sí</label>
+                        <label class="three columns"><input name="p1-o1" type="radio" value="familia-no"> No</label>
+                        <label class="three columns"><input name="p1-o1" type="radio" value="familia-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Mi Escuela</label>
+                        <label class="three columns"><input name="p1-o2" type="radio" value="escuela-si"> Sí</label>
+                        <label class="three columns"><input name="p1-o2" type="radio" value="escuela-no"> No</label>
+                        <label class="three columns"><input name="p1-o2" type="radio" value="escuela-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Mi Comunidad</label>
+                        <label class="three columns"><input name="p1-o3" type="radio" value="comunidad-si"> Sí</label>
+                        <label class="three columns"><input name="p1-o3" type="radio" value="comunidad-no"> No</label>
+                        <label class="three columns"><input name="p1-o3" type="radio" value="comunidad-no-contesto"> No Contesto</label>
+                    </div>
+
+                    <h4>2.2 <small>Vivo mi religión sin ser molestado:</small></h4>
+                    <div id="p2" class="row">
+                        <label class="three columns offset-by-three"><input name="p2-o1" type="radio" value="si"> Sí</label>
+                        <label class="three columns"><input name="p2-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p2-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+                    <h4>2.3 <small>La información sobre mis derechos la he obtenido a través de:</small></h4>
+                    <div id="p3" class="row">
+                        <label class="three columns">Mi familia</label>
+                        <label class="three columns"><input name="p3-o1" type="radio" value="familia-si"> Sí</label>
+                        <label class="three columns"><input name="p3-o1" type="radio" value="familia-no"> No</label>
+                        <label class="three columns"><input name="p3-o1" type="radio" value="familia-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Mi Escuela</label>
+                        <label class="three columns"><input name="p3-o2" type="radio" value="escuela-si"> Sí</label>
+                        <label class="three columns"><input name="p3-o2" type="radio" value="escuela-no"> No</label>
+                        <label class="three columns"><input name="p3-o2" type="radio" value="escuela-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Mis Amigas y Amigos</label>
+                        <label class="three columns"><input name="p3-o3" type="radio" value="amigos-si"> Sí</label>
+                        <label class="three columns"><input name="p3-o3" type="radio" value="amigos-no"> No</label>
+                        <label class="three columns"><input name="p3-o3" type="radio" value="amigos-no-contesto"> No Contesto</label>
+                        
+                        <label class="three columns">Medios de Comunicación</label>
+                        <label class="three columns"><input name="p3-o4" type="radio" value="medios-si"> Sí</label>
+                        <label class="three columns"><input name="p3-o4" type="radio" value="medios-no"> No</label>
+                        <label class="three columns"><input name="p3-o4" type="radio" value="medios-no-contesto"> No Contesto</label>
+                        
+                        <label class="three columns">Organización</label>
+                        <label class="three columns"><input name="p3-o5" type="radio" value="organizacion-si"> Sí</label>
+                        <label class="three columns"><input name="p3-o5" type="radio" value="organizacion-no"> No</label>
+                        <label class="three columns"><input name="p3-o5" type="radio" value="organizacion-no-contesto"> No Contesto</label>
+                        
+                        <div class="twelve columns"><label>Otra</label></div>
+                        <div class="ten columns end"><textarea id="p3-c"></textarea></div>
+                    </div>
+
+                    <h4>2.4 <small>He recibido información sobre sexualidad:</small></h4>
+                    <div id="p4" class="row">
+                        <label class="three columns offset-by-three"><input name="p4-o1" type="radio" value="si"> Sí</label>
+                        <label class="three columns"><input name="p4-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p4-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+
+                    <h4>2.5 <small>He recibido información sobre el cuidado y respeto que debo tener sobre mi cuerpo:</small></h4>
+                    <div id="p5" class="row">
+                        <label class="three columns offset-by-three"><input name="p5-o1" type="radio" value="si"> Sí</label>
+                        <label class="three columns"><input name="p5-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p5-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+
+                    <h4>2.6 <small>He recibido información sobre el cuidado y respeto que otros deben tener sobre mi cuerpo:</small></h4>
+                    <div id="p6" class="row">
+                        <label class="three columns offset-by-three"><input name="p6-o1" type="radio" value="si"> Sí</label>
+                        <label class="three columns"><input name="p6-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p6-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+                    <h4>2.7 <small>He recibido información sobre:</small></h4>
+                    <div id="p7" class="row">
+                        <label class="three columns">Alcohol, drogas u otras adicciones</label>
+                        <label class="three columns"><input name="p7-o1" type="radio" value="drogas-si"> Sí</label>
+                        <label class="three columns"><input name="p7-o1" type="radio" value="drogas-no"> No</label>
+                        <label class="three columns"><input name="p7-o1" type="radio" value="drogas-no-contesto"> No Contesto</label>
+                        
+                        <label class="twelve columns"></label>
+                        
+                        <label class="three columns">Prevención del embarazo</label>
+                        <label class="three columns"><input name="p7-o2" type="radio" value="embarazo-si"> Sí</label>
+                        <label class="three columns"><input name="p7-o2" type="radio" value="embarazo-no"> No</label>
+                        <label class="three columns"><input name="p7-o2" type="radio" value="embarazo-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Enfermedades de transmisión sexual y sida</label>
+                        <label class="three columns"><input name="p7-o3" type="radio" value="std-si"> Sí</label>
+                        <label class="three columns"><input name="p7-o3" type="radio" value="std-no"> No</label>
+                        <label class="three columns"><input name="p7-o3" type="radio" value="std-no-contesto"> No Contesto</label>
+                        
+                        <label class="twelve columns"></label>
+                        
+                        <label class="three columns">Riesgos en el uso del internet y redes sociales</label>
+                        <label class="three columns"><input name="p7-o4" type="radio" value="internet-si"> Sí</label>
+                        <label class="three columns"><input name="p7-o4" type="radio" value="internet-no"> No</label>
+                        <label class="three columns"><input name="p7-o4" type="radio" value="internet-no-contesto"> No Contesto</label>
+                    </div>
+
+                    <h4>2.8 <small>Sé que puedo organizarme con otras niñas, niños o adolescentes para defender mis derechos:</small></h4>
+                    <div id="p8" class="row">
+                        <label class="three columns offset-by-three"><input name="p8-o1" type="radio" value="si"> Sí</label>
+                        <label class="three columns"><input name="p8-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p8-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+
+                    <h4>2.9 <small>Han registrado mis cosas (mochilas, libros, ropa, etc.) sin mi consentimiento en:</small></h4>
+                    <div id="p9" class="row">
+                        <label class="three columns">Mi familia</label>
+                        <label class="three columns"><input name="p9-o1" type="radio" value="familia-si"> Sí</label>
+                        <label class="three columns"><input name="p9-o1" type="radio" value="familia-no"> No</label>
+                        <label class="three columns"><input name="p9-o1" type="radio" value="familia-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Mi Escuela</label>
+                        <label class="three columns"><input name="p9-o2" type="radio" value="escuela-si"> Sí</label>
+                        <label class="three columns"><input name="p9-o2" type="radio" value="escuela-no"> No</label>
+                        <label class="three columns"><input name="p9-o2" type="radio" value="escuela-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Mi Comunidad</label>
+                        <label class="three columns"><input name="p9-o3" type="radio" value="comunidad-si"> Sí</label>
+                        <label class="three columns"><input name="p9-o3" type="radio" value="comunidad-no"> No</label>
+                        <label class="three columns"><input name="p9-o3" type="radio" value="comunidad-no-contesto"> No Contesto</label>
+                    </div>
+
+
+                    <h4>2.10 <small>Tengo acta de nacimiento:</small></h4>
+                    <div id="p10" class="row">
+                        <label class="three columns offset-by-three"><input name="p10-o1" type="radio" value="si"> Sí</label>
+                        <label class="three columns"><input name="p10-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p10-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+                    <br/>
+                    <a href="bloque3.html" class="four columns end round button" id="continuar">Continuar con el Tercer Bloque</a>
+                    <a href="preview.html" class="four columns end round button" id="preview">Vista Previa</a>
+                    <br/>
+                    <div class="eight end columns error">
+                        <small id="mensaje"></small>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Included JS Files (Compressed) -->
+        <script src="assets/foundation/javascripts/jquery.js"></script>
+        <script src="assets/foundation/javascripts/foundation.min.js"></script>
+
+        <!-- Initialize JS Plugins -->
+        <script src="assets/foundation/javascripts/app.js"></script>
+
+        <script src="assets/foundation/javascripts/jquery.foundation.forms.js"></script>
+        <script src="assets/foundation/javascripts/jquery.foundation.buttons.js"></script>
+        <script src="assets/js/app.js"></script>
+        <script type="text/javascript" src="assets/js/load_bloque2.js"></script>
+    </body>
+</html>

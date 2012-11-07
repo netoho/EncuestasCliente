@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+
+<!-- paulirish.com/2008/conditional-stylesheets-vs-css-hacks-answer-neither/ -->
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+    <head>
+        <meta charset="utf-8" />
+
+        <!-- Set the viewport width to device width for mobile -->
+        <meta name="viewport" content="width=device-width" />
+
+        <title>Encuestas</title>
+
+        <!-- Included CSS Files (Uncompressed) -->
+        <!--
+        <link rel="stylesheet" href="stylesheets/foundation.css">
+        -->
+
+        <!-- Included CSS Files (Compressed) -->
+        <link rel="stylesheet" href="assets/foundation/stylesheets/foundation.min.css">
+        <link rel="stylesheet" href="assets/foundation/stylesheets/app.css">
+
+        <script src="assets/foundation/javascripts/modernizr.foundation.js"></script>
+
+        <!-- IE Fix for HTML5 Tags -->
+        <!--[if lt IE 9]>
+          <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+
+    </head>
+    <body>
+        <div class="row">
+            <form>
+                <fieldset>
+
+                    <h3>Bloque 3</h3>
+
+                    <h4>3.1 <small>Considero que mi escuela cuenta con todos los materiales y espacios adecuados para mi aprendizaje:</small></h4>
+                    <div class="row" id="p1">
+                        <label class="three columns offset-by-three"><input name="p1-o1" type="radio" value="si"> Sí</label>
+                        <label class="three columns"><input name="p1-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p1-o1" type="radio" value="no-contesto"> No Contesto</label>
+                        <br/>
+                        <br/>
+                        <div class="twelve columns"><label>¿Qué le falta?</label></div>
+                        <div class="ten columns end"><textarea id="p1-c"></textarea></div>
+                    </div>
+
+                    <h4>3.2 <small>En mi escuela, mis maestros:</small></h4>
+                    <div class="row" id="p2">
+                        <label class="three columns">Me explican lo que no entiendo</label>
+                        <label class="three columns"><input name="p2-o1" type="radio" value="explican-si"> Sí</label>
+                        <label class="three columns"><input name="p2-o1" type="radio" value="explican-no"> No</label>
+                        <label class="three columns"><input name="p2-o1" type="radio" value="explican-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Me respetan</label>
+                        <label class="three columns"><input name="p2-o2" type="radio" value="respetan-si"> Sí</label>
+                        <label class="three columns"><input name="p2-o2" type="radio" value="respetan-no"> No</label>
+                        <label class="three columns"><input name="p2-o2" type="radio" value="respetan-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Han intentado tocar mi cuerpo de forma que me hace sentir incómodo o incómoda</label>
+                        <label class="three columns"><input name="p2-o3" type="radio" value="tocan-si"> Sí</label>
+                        <label class="three columns"><input name="p2-o3" type="radio" value="tocan-no"> No</label>
+                        <label class="three columns"><input name="p2-o3" type="radio" value="tocan-no-contesto"> No Contesto</label>
+                        <label class="twelve columns"></label>
+                        <label class="three columns">Tratan igual a niñas y a niños</label>
+                        <label class="three columns"><input name="p2-o4" type="radio" value="igualdad-si"> Sí</label>
+                        <label class="three columns"><input name="p2-o4" type="radio" value="igualdad-no"> No</label>
+                        <label class="three columns"><input name="p2-o4" type="radio" value="igualdad-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Me gritan y me insultan</label>
+                        <label class="three columns"><input name="p2-o5" type="radio" value="gritan-si"> Sí</label>
+                        <label class="three columns"><input name="p2-o5" type="radio" value="gritan-no"> No</label>
+                        <label class="three columns"><input name="p2-o5" type="radio" value="gritan-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Me pegan</label>
+                        <label class="three columns"><input name="p2-o6" type="radio" value="pegan-si"> Sí</label>
+                        <label class="three columns"><input name="p2-o6" type="radio" value="pegan-no"> No</label>
+                        <label class="three columns"><input name="p2-o6" type="radio" value="pegan-no-contesto"> No Contesto</label>
+                        
+                    </div>
+
+                    <h4>3.3 <small>En mi escuela, mis compañeras y compañeros:</small></h4>
+                    <div class="row" id="p3">
+                        <label class="three columns">Me respetan</label>
+                        <label class="three columns"><input name="p3-o1" type="radio" value="respetan-si"> Sí</label>
+                        <label class="three columns"><input name="p3-o1" type="radio" value="respetan-no"> No</label>
+                        <label class="three columns"><input name="p3-o2" type="radio" value="respetan-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Han intentado tocar mi cuerpo de forma que me hace sentir incómodo o incómoda</label>
+                        <label class="three columns"><input name="p3-o2" type="radio" value="tocan-si"> Sí</label>
+                        <label class="three columns"><input name="p3-o2" type="radio" value="tocan-no"> No</label>
+                        <label class="three columns"><input name="p3-o2" type="radio" value="tocan-no-contesto"> No Contesto</label>
+                        <label class="twelve columns"></label>
+                        <label class="three columns">Respetan igual a niñas y a niños</label>
+                        <label class="three columns"><input name="p3-o3" type="radio" value="igualdad-si"> Sí</label>
+                        <label class="three columns"><input name="p3-o3" type="radio" value="igualdad-no"> No</label>
+                        <label class="three columns"><input name="p3-o3" type="radio" value="igualdad-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Me gritan y me insultan</label>
+                        <label class="three columns"><input name="p3-o4" type="radio" value="gritan-si"> Sí</label>
+                        <label class="three columns"><input name="p3-o4" type="radio" value="gritan-no"> No</label>
+                        <label class="three columns"><input name="p3-o4" type="radio" value="gritan-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Me pegan</label>
+                        <label class="three columns"><input name="p3-o5" type="radio" value="pegan-si"> Sí</label>
+                        <label class="three columns"><input name="p3-o5" type="radio" value="pegan-no"> No</label>
+                        <label class="three columns"><input name="p3-o5" type="radio" value="pegan-no-contesto"> No Contesto</label>
+                        
+                    </div>
+
+                    <h4>3.4 <small>En mi comunidad hay escuelas para seguir estudiando la:</small></h4>
+                    <div class="row" id="p4">
+                        <label class="three columns">Primaria</label>
+                        <label class="three columns"><input name="p4-o1" type="radio" value="primaria-si"> Sí</label>
+                        <label class="three columns"><input name="p4-o1" type="radio" value="primaria-no"> No</label>
+                        <label class="three columns"><input name="p4-o1" type="radio" value="primaria-no-contesto"> No Contesteo</label>
+
+                        <label class="three columns">Secundaria</label>
+                        <label class="three columns"><input name="p4-o2" type="radio" value="secundaria-si"> Sí</label>
+                        <label class="three columns"><input name="p4-o2" type="radio" value="secundaria-no"> No</label>
+                        <label class="three columns"><input name="p4-o2" type="radio" value="secundaria-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Preparatoria</label>
+                        <label class="three columns"><input name="p4-o3" type="radio" value="preparatoria-si"> Sí</label>
+                        <label class="three columns"><input name="p4-o3" type="radio" value="preparatoria-no"> No</label>
+                        <label class="three columns"><input name="p4-o3" type="radio" value="preparatoria-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Universidad</label>
+                        <label class="three columns"><input name="p4-o4" type="radio" value="universidad-si"> Sí</label>
+                        <label class="three columns"><input name="p4-o4" type="radio" value="universidad-no"> No</label>
+                        <label class="three columns"><input name="p4-o4" type="radio" value="universidad-no-contesto"> No Contesto</label>
+                        
+                    </div>
+
+
+                    <h4>3.5 <small>Cuando me enfermo me llevan al:</small></h4>
+                    <div class="row" id="p5">
+                        <label class="three columns">Médico particular</label>
+                        <label class="three columns"><input name="p5-o1" type="radio" value="medico-si"> Sí</label>
+                        <label class="three columns"><input name="p5-o1" type="radio" value="medico-no"> No</label>
+                        <label class="three columns"><input name="p5-o1" type="radio" value="medico-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Centro de Salud</label>
+                        <label class="three columns"><input name="p5-o2" type="radio" value="centro-si"> Sí</label>
+                        <label class="three columns"><input name="p5-o2" type="radio" value="centro-no"> No</label>
+                        <label class="three columns"><input name="p5-o2" type="radio" value="centro-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Hospital regional</label>
+                        <label class="three columns"><input name="p5-o3" type="radio" value="hospital-si"> Sí</label>
+                        <label class="three columns"><input name="p5-o3" type="radio" value="hospital-no"> No</label>
+                        <label class="three columns"><input name="p5-o3" type="radio" value="hospital-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Curandero</label>
+                        <label class="three columns"><input name="p5-o4" type="radio" value="curandero-si"> Sí</label>
+                        <label class="three columns"><input name="p5-o4" type="radio" value="curandero-no"> No</label>
+                        <label class="three columns"><input name="p5-o4" type="radio" value="curandero-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Farmacia</label>
+                        <label class="three columns"><input name="p5-o5" type="radio" value="farmacia-si"> Sí</label>
+                        <label class="three columns"><input name="p5-o5" type="radio" value="farmacia-no"> No</label>
+                        <label class="three columns"><input name="p5-o5" type="radio" value="farmacia-no-contesto"> No Contesto</label>
+
+                        <div class="twelve columns"><label>Otro</label></div>
+                        <div class="ten columns end"><textarea id="p5-c"></textarea></div>
+                    </div>
+
+                    <h4>3.6 <small>Existen en mi comunidad hospitales especializados en atender a niñas, niños y adolescentes</small></h4>
+                    <div class="row" id="p6">
+                        <label class="three columns offset-by-three"><input name="p6-o1" type="radio" value="si"> Sí</label>
+                        <label class="three columns"><input name="p6-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p6-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+                    <h4>3.7 <small>Como suficiente en mi casa:</small></h4>
+                    <div class="row" id="p7">
+                        <label class="three columns"><input name="p7-o1" type="radio" value="siempre"> Siempre</label>
+                        <label class="three columns"><input name="p7-o1" type="radio" value="a-veces"> A veces</label>
+                        <label class="three columns"><input name="p7-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p7-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+                    <h4>3.8 <small>He pasado hambre en mi casa:</small></h4>
+                    <div class="row" id="p8">
+                        <label class="three columns"><input name="p8-o1" type="radio" value="si-seguido"> Sí, seguido</label>
+                        <label class="three columns"><input name="p8-o1" type="radio" value="si-a-veces">Sí, a veces</label>
+                        <label class="three columns"><input name="p8-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p8-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+                    <h4>3.9 <small>Como comida chatarra:</small></h4>
+                    <div class="row" id="p9">
+                        <label class="three columns"><input name="p9-o1" type="radio" value="si-seguido"> Sí, seguido</label>
+                        <label class="three columns"><input name="p9-o1" type="radio" value="si-a-veces">Sí, a veces</label>
+                        <label class="three columns"><input name="p9-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p9-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+                    <h4>3.10 <small>En mi casa realizo las siguientes actividades:</small></h4>
+                    <div class="row" id="p10">
+                        <label class="three columns">Apoyo a la limpieza</label>
+                        <label class="three columns"><input name="p10-o1" type="radio" value="limpieza-si"> Sí</label>
+                        <label class="three columns"><input name="p10-o1" type="radio" value="limpieza-no"> No</label>
+                        <label class="three columns"><input name="p10-o1" type="radio" value="limpieza-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Cuido a mis hermanas/os o familiares</label>
+                        <label class="three columns"><input name="p10-o2" type="radio" value="cuidar-si"> Sí</label>
+                        <label class="three columns"><input name="p10-o2" type="radio" value="cuidar-no"> No</label>
+                        <label class="three columns"><input name="p10-o2" type="radio" value="cuidar-no-contesto"> No Contesto</label>
+                        <label class="twelve columns"></label>
+
+                        <label class="three columns">Apoyo en el trabajo de mamá/papá</label>
+                        <label class="three columns"><input name="p10-o3" type="radio" value="trabajo-si"> Sí</label>
+                        <label class="three columns"><input name="p10-o3" type="radio" value="trabajo-no"> No</label>
+                        <label class="three columns"><input name="p10-o3" type="radio" value="trabajo-no-contesto"> No Contesto</label>
+
+                        <div class="twelve columns"><label>Otras:</label></div>
+                        <div class="ten columns end"><textarea id="p10-c"></textarea></div>
+                    </div>
+
+                    <h4>3.11 <small>Tengo que salir de mi comunidad para:</small></h4>
+                    <div class="row" id="p11">
+                        <label class="three columns">Seguir estudiando</label>
+                        <label class="three columns"><input name="p11-o1" type="radio" value="estudiar-si"> Sí</label>
+                        <label class="three columns"><input name="p11-o1" type="radio" value="estudiar-no"> No</label>
+                        <label class="three columns"><input name="p11-o1" type="radio" value="estudiar-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Conseguir trabajo y dinero</label>
+                        <label class="three columns"><input name="p11-o2" type="radio" value="dinero-si"> Sí</label>
+                        <label class="three columns"><input name="p11-o2" type="radio" value="dinero-no"> No</label>
+                        <label class="three columns"><input name="p11-o2" type="radio" value="dinero-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Curarme de alguna enfermedad</label>
+                        <label class="three columns"><input name="p11-o3" type="radio" value="enfermedad-si"> Sí</label>
+                        <label class="three columns"><input name="p11-o3" type="radio" value="enfermedad-no"> No</label>
+                        <label class="three columns"><input name="p11-o3" type="radio" value="enfermedad-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Ver a mis padres</label>
+                        <label class="three columns"><input name="p11-o4" type="radio" value="familiares-si"> Sí</label>
+                        <label class="three columns"><input name="p11-o4" type="radio" value="familiares-no"> No</label>
+                        <label class="three columns"><input name="p11-o4" type="radio" value="familiares-no-contesto"> No Contesto</label>
+                        
+                    </div>
+
+                    <h4>3.12 <small>He recibido malos tratos (golpes, insultos, persecución) por ser niña, niño, adolescente en:</small></h4>
+                    <div class="row" id="p12">
+                        <label class="three columns">Mi familia</label>
+                        <label class="three columns"><input name="p12-o1" type="radio" value="familia-si"> Sí</label>
+                        <label class="three columns"><input name="p12-o1" type="radio" value="familia-no"> No</label>
+                        <label class="three columns"><input name="p12-o1" type="radio" value="familia-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Mi Escuela</label>
+                        <label class="three columns"><input name="p12-o2" type="radio" value="escuela-si"> Sí</label>
+                        <label class="three columns"><input name="p12-o2" type="radio" value="escuela-no"> No</label>
+                        <label class="three columns"><input name="p12-o2" type="radio" value="escuela-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Mi Comunidad</label>
+                        <label class="three columns"><input name="p12-o3" type="radio" value="comunidad-si"> Sí</label>
+                        <label class="three columns"><input name="p12-o3" type="radio" value="comunidad-no"> No</label>
+                        <label class="three columns"><input name="p12-o3" type="radio" value="comunidad-no-contesto"> No Contesto</label>
+                        
+                    </div>
+
+                    <h4>3.13 <small>Han tocado mi cuerpo de forma que me hacer sentir incómoda o incómodo en:</small></h4>
+                    <div class="row" id="p13">
+                        <label class="three columns">Mi familia</label>
+                        <label class="three columns"><input name="p13-o1" type="radio" value="familia-si"> Sí</label>
+                        <label class="three columns"><input name="p13-o1" type="radio" value="familia-no"> No</label>
+                        <label class="three columns"><input name="p13-o1" type="radio" value="familia-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Mi Escuela</label>
+                        <label class="three columns"><input name="p13-o2" type="radio" value="escuela-si"> Sí</label>
+                        <label class="three columns"><input name="p13-o2" type="radio" value="escuela-no"> No</label>
+                        <label class="three columns"><input name="p13-o2" type="radio" value="escuela-no-contesto"> No Contesto</label>
+
+                        <label class="three columns">Mi Comunidad</label>
+                        <label class="three columns"><input name="p13-o3" type="radio" value="comunidad-si"> Sí</label>
+                        <label class="three columns"><input name="p13-o3" type="radio" value="comunidad-no"> No</label>
+                        <label class="three columns"><input name="p13-o3" type="radio" value="comunidad-no-contesto"> No Contesto</label>
+                        
+                    </div>
+
+                    <h4>3.14 <small>Conozco a una niña, niño o adolescente que es utilizado por un adulto para actividades sexuales:</small></h4>
+                    <div class="row" id="p14">
+                        <label class="three columns offset-by-three"><input name="p14-o1" type="radio" value="si"> Sí</label>
+                        <label class="three columns"><input name="p14-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p14-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+                    <h4>3.15 <small>Sé que es un delito la compra y venta de niñas, niños y adolescentes para cualquier fin:</small></h4>
+                    <div class="row" id="p15">
+                        <label class="three columns offset-by-three"><input name="p15-o1" type="radio" value="si"> Sí</label>
+                        <label class="three columns"><input name="p15-o1" type="radio" value="no"> No</label>
+                        <label class="three columns"><input name="p15-o1" type="radio" value="no-contesto"> No Contesto</label>
+                    </div>
+
+
+                    <br/>
+                    <a href="bloque4.html" class="four columns end round button" id="continuar">Continuar con el Cuarto Bloque</a>
+                    <a href="preview.html" class="four columns end round button" id="preview">Vista Previa</a>
+                    <br/>
+                    <div class="eight end columns error">
+                        <small id="mensaje"></small>
+                    </div>
+                    <br/>
+                    <br/>
+                    <br/>
+                </fieldset>
+            </form>
+        </div>
+
+        <!-- Included JS Files (Compressed) -->
+        <script src="assets/foundation/javascripts/jquery.js"></script>
+        <script src="assets/foundation/javascripts/foundation.min.js"></script>
+
+        <!-- Initialize JS Plugins -->
+        <script src="assets/foundation/javascripts/app.js"></script>
+        <script src="assets/foundation/javascripts/jquery.foundation.forms.js"></script>
+        <script src="assets/foundation/javascripts/jquery.foundation.buttons.js"></script>
+
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/load_bloque3.js" type="text/javascript"></script>
+    </body>
+</html>
